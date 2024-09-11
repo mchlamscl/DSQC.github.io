@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Department of Sanitation and Cleanup Works of Quezon City - Quezon City</title>
+    <link rel="stylesheet" href="css/Departments.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Elements/DSCA2.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-column">
+            <img src="Elements/DCSA.png" class="logo" alt="Logo 1">
+        </div>
+        <div class="header-column">
+            <i class="fas fa-phone-alt icon"></i>
+            <div>
+                <p class="h3">CALL US</p>
+                <p class="p">+8988-4242 loc. 8362</p>
+            </div>
+        </div>
+        <div class="header-column">
+            <i class="fas fa-envelope icon"></i>
+            <div class="header-text">
+                <p class="h3">EMAIL US</p>
+                <p class="p">DSQC@quezoncity.gov.ph</p>
+            </div>
+        </div>
+        <div class="header-column">
+            <i class="fas fa-map-marker-alt icon"></i>
+            <div class="header-text">
+                <p class="h3">LOCATION</p>
+                <p class="p">6th floor Civic Center Bldg D <br> QC Hall Compound Diliman QC</p>
+            </div>
+        </div>
+
+        <div class="header-column">
+            <img src="Elements/QC.png" alt="Logo 2">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Departments.html">DEPARTMENTS</a></li>
+            <li><a href="Activities.html">ACTIVITIES</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="programs.html">PROGRAMS</a></li>
+        </ul>
+    </nav>
+
+    <div class="top-text">
+        <button id="director">
+            <h1> Department Directory</h1>
+        </button>
+    </div>
+
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="box-preview" id="popup">
+        <div class="preview-info">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Officer Name: Atty. Renato P. Magbalon III (Chief)</h4> <br>
+                <h2>Officer Address:</h4>
+                    <p>6th Floor, Building Regulatory Offices (Civic Center D) Mayaman St. Quezon City Hall Compound,
+                        Diliman, Quezon City</p> <br>
+                    <h2>Contact Information:</h4>
+                        <p>8988-4242 loc.8363 wastemanagement.DSQC@quezoncity.gov.ph</p>
+                        <br>
+                        <button onclick="closePopup()">Back</button>
+        </div>
+    </div>
+
+    <div class="box-preview" id="popup1">
+        <div class="preview-info">
+            <span class="close-btn" onclick="closePopup1()">&times;</span>
+            <h2>Officer Name: Atty. Hannah Mae M. Medes (OIC-Cheif) </h4> <br>
+                <h2>Officer Address:</h4>
+                    <p>6th Floor, Building Regulatory Offices (Civic Center D) Mayaman St. Quezon City Hall Compound,
+                        Diliman, Quezon City</p> <br>
+                    <h2>Contact Information:</h4>
+                        <p>8988-4242 loc.8363 wastemanagement.DSQC@quezoncity.gov.ph</p>
+                        <br>
+                        <button onclick="closePopup1()">Back</button>
+        </div>
+    </div>
+
+    <div class="box-preview" id="popup2">
+        <div class="preview-info">
+            <span class="close-btn" onclick="closePopup2()">&times;</span>
+            <h2>Officer Name: Mr. Richard Santuile </h4> <br>
+                <h2>Officer Address:</h4>
+                    <p>6th Floor, Building Regulatory Offices (Civic Center D) Mayaman St. Quezon City Hall Compound,
+                        Diliman, Quezon City</p> <br>
+                    <h2>Contact Information:</h4>
+                        <p>8988-4242 loc.8363 wastemanagement.DSQC@quezoncity.gov.ph</p>
+                        <br>
+                        <button onclick="closePopup2()">Back</button>
+        </div>
+    </div>
+
+    <div class="box-preview" id="popup3">
+        <div class="preview-info">
+            <span class="close-btn" onclick="closePopup3()">&times;</span>
+            <h2>Officer Name: Ms. Kristine Mae S. Francisco-Sibonga (IOC Chief)</h4> <br>
+                <h2>Officer Address:</h4>
+                    <p>6th Floor, Building Regulatory Offices (Civic Center D) Mayaman St. Quezon City Hall Compound,
+                        Diliman, Quezon City</p> <br>
+                    <h2>Contact Information:</h4>
+                        <p>8988-4242 loc.8363 wastemanagement.DSQC@quezoncity.gov.ph</p>
+                        <br>
+                        <button onclick="closePopup3()">Back</button>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <button onclick="openPopup()" class="box1">
+            <h1>Waste Management Operations Division</h1>
+            <img src="Elements/pride.png" alt="">
+        </button>
+
+        <button onclick="openPopup1()" class="box1">
+            <h1>Administrative Affairs & Property Management Division</h1>
+            <img src="Elements/pride.png" alt="">
+        </button>
+
+        <button onclick="openPopup2()" class="box1">
+            <h1>Permits & Compliance Division</h1>
+            <img src="Elements/pride.png" alt="">
+        </button>
+
+        <button onclick="openPopup3()" class="box1">
+            <h1>Administrative Public Affairs & Special Concerns Division</h1>
+            <img src="Elements/pride.png" alt="">
+        </button>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById('popup').style.display = 'block';
+            document.querySelector('.overlay').style.display = 'block';
+        }
+        function openPopup1() {
+            document.getElementById('popup1').style.display = 'block';
+            document.querySelector('.overlay').style.display = 'block';
+        }
+        function openPopup2() {
+            document.getElementById('popup2').style.display = 'block';
+            document.querySelector('.overlay').style.display = 'block';
+        }
+        function openPopup3() {
+            document.getElementById('popup3').style.display = 'block';
+            document.querySelector('.overlay').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.querySelector('.overlay').style.display = 'none';
+        }
+        function closePopup1() {
+            document.getElementById('popup1').style.display = 'none';
+            document.querySelector('.overlay').style.display = 'none';
+        }
+        function closePopup2() {
+            document.getElementById('popup2').style.display = 'none';
+            document.querySelector('.overlay').style.display = 'none';
+        }
+        function closePopup3() {
+            document.getElementById('popup3').style.display = 'none';
+            document.querySelector('.overlay').style.display = 'none';
+        }
+
+        document.getElementById('director').onclick = function () {
+            window.location.href = 'director.html';
+        };
+    </script>
+
+
+</body>

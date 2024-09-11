@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ABOUT | Department of Sanitation and Cleanup Works of Quezon City - Quezon City </title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="Elements/DSCA2.png">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-column">
+            <img src="Elements/DCSA.png" class="logo" alt="Logo 1">
+        </div>
+        <div class="header-column">
+            <i class="fas fa-phone-alt icon"></i>
+            <div>
+                <p class="h3">CALL US</p>
+                <p class="p">+8988-4242 loc. 8362</p>
+            </div>
+        </div>
+        <div class="header-column">
+            <i class="fas fa-envelope icon"></i>
+            <div class="header-text">
+                <p class="h3">EMAIL US</p>
+                <p class="p">DSQC@quezoncity.gov.ph</p>
+            </div>
+        </div>
+        <div class="header-column">
+            <i class="fas fa-map-marker-alt icon"></i>
+            <div class="header-text">
+                <p class="h3">LOCATION</p>
+                <p class="p">6th floor Civic Center Bldg D <br> QC Hall Compound diliman QC</p>
+            </div>
+        </div>
+
+        <div class="header-column">
+            <img src="Elements/QC.png" alt="Logo 2">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="Departments.html">DEPARTMENTS</a></li>
+            <li><a href="Activities.html">ACTIVITIES</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="programs.html">PROGRAMS</a></li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        <div class="description">
+            <div class="descripContainer">
+                <h1>DESCRIPTION</h1>
+                <p>The Department of Sanitation and Cleanup Works of Quezon City (DSQC) is the lead
+                    Department responsible for the City’s sanitation, waste management, compliance to
+                    the environmental laws, related rules and regulations, and the development and
+                    administration of a Comprehensive Environmental Protection Program.</p>
+                <h1>MISSION</h1>
+                <p>The Department shall undertake to develop a workforce dedicated to the delivery of services
+                    that is efficient, transparent, and community-driven; prepare programs that have clear
+                    deliverable/output, which are also cognizant of the sanitation and environmental concerns of
+                    both the business-community and the general public; utilize available community-engagement
+                    channels particularly through social media platforms, by creating systems and tools that
+                    will make client-engagement and feedback more convenient; proposing guidelines and other
+                    pertinent legislation that will complement existing laws on environmental protection.</p>
+            </div>
+        </div>
+
+        <div class="description-visible">
+            <div class="descripContainer">
+                <h1>VISION</h1>
+                <p>To provide efficient and reliable sanitation services to Quezon City residents
+                    covering waste management, disaster-relief, environmental compliance, public affairs
+                    and other special concerns; To ensure transparency of services and delivery of
+                    expected output, as well as provide the public with relevant information and
+                    channels for interaction; and To implement community-oriented activities,
+                    geared towards maximum stakeholder-engagement in the plans and programs of
+                    the Department.</p>
+                <h1>LEGAL BASES</h1>
+                <p>City Ordinance No. SP-3015, S-2020: An Ordinance Renaming the Environmental
+                    Protection and Waste Management Department (EPWMD) into a Department of
+                    Sanitation and Cleanup Works of Quezon City (DSQC), Providing for its
+                    Reorganization, Defining its Powers and Functions, Appropriating Funds
+                    Therefor, and for Other Purposes. City Ordinance No. SP-2350, S-2014:
+                    An Ordinance Providing for the Environmental Protection and Waste Management
+                    Code of Quezon City. Republic Act No. 9003: Act Providing For An Ecological
+                    Solid Waste Management Program, Creating the Necessary Institutional Mechanisms
+                    and Incentives, Declaring Certain Acts Prohibited and Providing Penalties,
+                    Appropriating Funds Therefor, and for Other Purposes.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="nextBTN">
+        <button class="prev" onclick="moveSlide(-1)">&#11164;</button>
+        <button class="next" onclick="moveSlide(1)">&#10148;</button>
+    </div>
+
+</body>
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        const slides = document.querySelectorAll('.description, .description-visible');
+        slides.forEach((slide, index) => {
+            slide.style.display = (index === slideIndex) ? 'block' : 'none';
+        });
+    }
+
+    function moveSlide(n) {
+        const slides = document.querySelectorAll('.description, .description-visible');
+        slideIndex = (slideIndex + n + slides.length) % slides.length;
+        showSlides();
+    }
+</script>
